@@ -12,7 +12,7 @@ class Item(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World, This a sample FastAPI endpoint."}
 
 
 @app.get('/favicon.ico', include_in_schema=False)
