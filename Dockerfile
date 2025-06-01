@@ -23,6 +23,4 @@ COPY --from=builder /usr/local/bin /usr/local/bin
 
 COPY . /code/
 
-EXPOSE 3000
-
-CMD ["fastapi", "run", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["fastapi", "run", "--host", "0.0.0.0", "--port", "8080"]
