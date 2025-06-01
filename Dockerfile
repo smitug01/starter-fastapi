@@ -25,4 +25,4 @@ COPY . /code/
 
 EXPOSE 3000
 
-CMD ["fastapi", "run", "--host", "0.0.0.0", "--port", "3000"]
+CMD ["fastapi", "run", "--host", "0.0.0.0", "--port", "$PORT"]
